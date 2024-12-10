@@ -1,0 +1,61 @@
+
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <table class="table table-bordered mb-5">
+            <thead class="bg-secondary text-white">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Email</th>
+                <th>Investments</th>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let members of investmentsArray" class="table-success">
+                    <td>{{members.id}}</td>
+                    <td>{{members.name}}</td>
+                    <td>{{members.contact}}</td>
+                    <td>{{members.email}}</td>
+                    <td>{{members.investments}}</td>
+                </tr>
+            </tbody>
+        </table>  
+
+        <table class="table table-bordered mb-5">
+            <thead class="bg-secondary text-white">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let employe of employeArray" class="table-danger">
+                    <td>{{employe.id}}</td>
+                    <td>{{employe.name}}</td>
+                    <td>{{employe.age}}</td>
+                    <td>{{employe.position}}</td>
+                    <td>{{employe.salary}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-bordered mb-5">
+            <thead class="bg-secondary text-white">
+                <th>OrderId</th>
+                <th>ProductName</th>
+                <th>Quantity</th>
+                <th>DeliveryDate</th>
+                <th>totalPrice</th>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let product of productArray" class="table-info">
+                    <td>{{product.orderId}}</td>
+                    <td>{{product.productName}}</td>
+                    <td>{{product.quantity}}</td>
+                    <td>{{product.deliveryDate}}</td>
+                    <td>{{product.totalPrice}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+      <ul class="list-group">
+        <li
+         *ngFor = "let places of placesToVisit"
+         class="list-group-item list-group-item-success">
+          I like to visit {{places}}, this is the best place to visit.
+        </li>
+      </ul>
+      <ul class="list-group mt-4">
+        <li
+         *ngFor = "let name of cricketersNames"
+         class="list-group-item list-group-item-danger">
+          {{name}} is the most famous cricketer in India.
+        </li>
+      </ul>
+      <ul class="list-group mt-4">
+        <li
+         *ngFor = "let frameWork of frameWorks"
+         class="list-group-item list-group-item-info">
+          {{frameWork}}, this is framework for web Application.
+        </li>
+      </ul>
+    </div>
+</div>
